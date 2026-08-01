@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  agent-studio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: energent-agent-studio:latest
+    container_name: energent-agent-studio
+    ports:
+      - "8501:8501"
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    restart: unless-stopped
