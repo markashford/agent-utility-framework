@@ -5,8 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: energent-agent-studio:latest
-    container_name: energent-agent-studio
+    image: agent-utility-framework:latest
+    container_name: agent-utility-framework
     ports:
       - "8501:8501"
     environment:

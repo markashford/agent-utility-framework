@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for contributing to Energent Agents.
+Thanks for contributing to the Agent Utility Framework.
 
 ## Development setup
 

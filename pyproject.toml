@@ -3,13 +3,13 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "energent-agents"
+name = "agent-utility-framework"
 version = "0.1.0"
 description = "Educational agent framework using Anthropic tools and MCP integrations"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-  { name = "Repo Maintainer" }
+  { name = "Mark Ashford", email = "markashford91@gmail.com" }
 ]
 dependencies = [
   "anthropic>=0.30.0",

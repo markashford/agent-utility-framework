@@ -1,21 +1,15 @@
-"""Interactive Streamlit UI for the Energent agent demo."""
+"""Interactive Streamlit UI for the agent utility framework demo."""
 
 import os
-import sys
-from pathlib import Path
 
 import streamlit as st
-
-# Ensure imports work when launching from repository root.
-PROJECT_ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(PROJECT_ROOT.parent))
 
 from agents.agent import Agent, ModelConfig
 from agents.tools.think import ThinkTool
 
 
 st.set_page_config(
-    page_title="Energent Agent Studio",
+    page_title="Agent Studio",
     page_icon="AI",
     layout="wide",
 )
@@ -60,7 +54,7 @@ st.markdown(
 st.markdown(
     """
     <section class="hero">
-      <h1>Energent Agent Studio</h1>
+      <h1>Agent Studio</h1>
       <p>Run a configurable Claude-powered tool agent and inspect responses in one place.</p>
     </section>
     """,
