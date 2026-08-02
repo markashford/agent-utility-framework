@@ -15,8 +15,8 @@ This repository is intentionally compact, but it is structured like a maintainab
 Many agent examples are either too toy-like or too large to understand quickly. This project sits in the middle:
 
 - small enough to learn in one sitting
-- clean enough to extend professionally
-- practical enough to showcase in a portfolio
+- clean enough to extend
+- practical enough to run as a local demo
 
 ## Features
 
@@ -72,7 +72,7 @@ from agents.agent import Agent
 from agents.tools.think import ThinkTool
 
 agent = Agent(
-    name="PortfolioAgent",
+    name="StudioAgent",
     system="You are a practical AI engineering assistant.",
     tools=[ThinkTool()],
 )
@@ -108,14 +108,13 @@ pip install .[mcp]
 
 Without MCP installed, core agent functionality and tests continue to work.
 
-## Professional roadmap ideas
+## Roadmap
 
-- add structured logging and request IDs
-- add async streaming response support
-- add policy guardrails for tool invocation
-- add CI workflow and pre-commit hooks
-- add benchmark prompts and evaluation artifacts
+- structured logging and request IDs
+- async streaming responses
+- policy guardrails for tool invocation
+- benchmark prompts and evaluation artifacts
 
 ## License
 
-Use this as a learning and portfolio project. Add your preferred open-source license before public release.
+MIT. See LICENSE.
