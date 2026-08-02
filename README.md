@@ -65,6 +65,8 @@ pip install .[ui]
 streamlit run streamlit_app.py
 ```
 
+The UI imports the installed `agents` package, so use an editable install (`pip install -e .[ui]`) during development.
+
 ## Minimal usage example
 
 ```python
