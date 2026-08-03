@@ -8,6 +8,14 @@ from agents.agent import Agent, ModelConfig
 from agents.tools.base import Tool
 
 
+def test_model_config_defaults() -> None:
+    config = ModelConfig()
+    assert config.model == "claude-sonnet-4-20250514"
+    assert config.max_tokens == 4096
+    assert 0.0 <= config.temperature <= 1.0
+    assert config.context_window_tokens > config.max_tokens
+
+
 @dataclass
 class FakeUsage:
     """Minimal usage object shape used by MessageHistory."""
